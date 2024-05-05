@@ -27,7 +27,7 @@ function App() {
     <Authenticator>
       {({ signOut, user }) => (
         <main>
-          <h1>Hello {user?.userId}</h1>
+          <h1>Hello {user?.signInDetails?.loginId}</h1>
           <h1>My To-Do's</h1>
           <button onClick={createTodo}>+ new</button>
           <ul>
